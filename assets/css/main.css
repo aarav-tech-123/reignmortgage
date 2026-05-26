@@ -14632,3 +14632,20 @@ Location:
 }
 
 /*============= COST CSS AREA ===============*//*# sourceMappingURL=main.css.map */
+
+.heading3 h1 {
+    color: #ffff;
+    font-family: var(--ztc-family-font1);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: var(--ztc-weight-bold);
+    line-height: 60px;
+}
+
+@media (max-width: 767px) {
+    .heading3 h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
