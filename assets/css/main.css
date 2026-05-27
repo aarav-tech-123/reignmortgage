@@ -7372,7 +7372,7 @@ Location:
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
   transition: all 0.4s;
-  background-image: url(../img/all-images/bg/cta-bg1.png);
+  background-image: url(../img/all-images/bg/cta-bg1.webp);
 }
 
 .homepage2-body, html {
@@ -11010,7 +11010,7 @@ Location:
 .cta1-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/all-images/bg/cta-bg1.png);
+  background-image: url(../img/all-images/bg/cta-bg1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11142,7 +11142,7 @@ Location:
 .cta3-section-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/all-images/bg/cta-bg1.png);
+  background-image: url(../img/all-images/bg/cta-bg1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
