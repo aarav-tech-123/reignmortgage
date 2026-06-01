@@ -246,9 +246,9 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="header-area">
-                        <h2>Contact Us</h2>
+                        <h2>Mortgage Calculator</h2>
                         <div class="space32"></div>
-                        <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>Contact Us</span></a>
+                        <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>Mortgage Calculator</span></a>
                     </div>
                 </div>
             </div>
@@ -275,87 +275,132 @@
                     <div class="cost-section-boxarea">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="row">
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="800">
-                                        <div class="slider-area">
-                                            <h3>Home Size:</h3>
-                                            <div class="space16"></div>
-                                            <div class="slider-container">
-                                                <div id="slider-value" class="slider-value">150</div>
-                                                <input type="range" min="0" max="300" value="150" id="slider">
-                                            </div>
+                                <div class="checkbox-row">
+                                    <label>
+                                        <input type="checkbox" id="firstBuyer">
+                                        First Time Home Buyer
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox">
+                                        New Build Home or Condo
+                                    </label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Province</label>
+                                    <select id="province">
+                                        <option>British Columbia</option>
+                                        <option>Ontario</option>
+                                        <option>Alberta</option>
+                                        <option>Quebec</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <label>Property Value</label>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <input type="number" id="propertyValue" value="1442037">
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6" data-aos="fade-up" data-aos-duration="900">
-                                        <div class="slider-area">
-                                            <h3>Number Of Floors:</h3>
-                                            <div class="space16"></div>
-                                            <div class="slider-container">
-                                                <div id="slider-value2" class="slider-value2">5</div>
-                                                <input type="range" min="0" max="10" value="5" id="slider2">
-                                            </div>
+                                    <div class="input-row">
+                                        <input type="range" id="propertyValueRange" min="100000" max="5000000"
+                                            step="1000" value="1442037">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <label>Down Payment ($)</label>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <input type="number" id="downPayment" value="308563">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
-                                        <div class="space32"></div>
-                                        <div class="select-area">
-                                            <h3>Energetic Class:</h3>
-                                            <div class="space16"></div>
-                                            <select>
-                                                <option value="1" data-display="Select">Option 01</option>
-                                                <option value="">Option 02</option>
-                                                <option value="">Option 03</option>
-                                                <option value="">Option 04</option>
-                                                <option value="">Option 05</option>
-                                                <option value="">Option 06</option>
-                                            </select>
+                                    <div class="input-row">
+                                        <input type="range" id="downPaymentRange" min="0" max="5000000" value="308563">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <label>Down Payment (%)</label>
                                         </div>
+                                        <div class="col-4 text-end">
+                                            <input type="number" id="downPercent" value="21.4">
+                                        </div>
+                                    </div>
+                                    <div class="input-row">
+                                        <input type="range" id="downPercentRange" min="5" max="100" step="0.1"
+                                            value="21.4">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <label>Interest Rate (%)</label>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <input type="number" id="interestRate" value="5.25">
+                                        </div>
+                                    </div>
+                                    <div class="input-row">
+                                        <input type="range" id="interestRateRange" min="1" max="15" step="0.01"
+                                            value="5.25">
+                                    </div>
+                                </div>
+
+                                <div class="double-grid">
+
+                                    <div class="form-group">
+                                        <label>Amortization</label>
+
+                                        <select id="amortization">
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                            <option selected>25</option>
+                                            <option>30</option>
+                                        </select>
                                     </div>
 
-                                    <div class="col-lg-4">
-                                        <div class="space32"></div>
-                                        <div class="select-area">
-                                            <h3>Bathroom:</h3>
-                                            <div class="space16"></div>
-                                            <select>
-                                                <option value="1" data-display="Select">Option 01</option>
-                                                <option value="">Option 02</option>
-                                                <option value="">Option 03</option>
-                                                <option value="">Option 04</option>
-                                                <option value="">Option 05</option>
-                                                <option value="">Option 06</option>
-                                            </select>
-                                        </div>
+                                    <div class="form-group">
+                                        <label>Term</label>
+
+                                        <select>
+                                            <option>1 Year</option>
+                                            <option>2 Years</option>
+                                            <option>3 Years</option>
+                                            <option>5 Years</option>
+                                        </select>
                                     </div>
 
-                                    <div class="col-lg-4">
-                                        <div class="space32"></div>
-                                        <div class="select-area">
-                                            <h3>Terrace:</h3>
-                                            <div class="space16"></div>
-                                            <div class="btn-area1">
-                                                <a href="javascript:void(0);" class="yes active-size">Yes</a>
-                                                <a href="javascript:void(0);" class="no">No</a>
-                                            </div>
-                                        </div>
+                                </div>
+
+                                <div class="double-grid">
+
+                                    <div class="form-group">
+                                        <label>Compounded Period</label>
+
+                                        <select>
+                                            <option>Monthly</option>
+                                            <option>Semi Annual</option>
+                                        </select>
                                     </div>
-                                    <div class="space32"></div>
-                                    <div class="col-lg-12" data-aos="fade-up" data-aos-duration="1000">
-                                        <div class="materials-area">
-                                            <h3>Building Materials:</h3>
-                                            <ul>
-                                                <li><a href="#">Cellular Concrete</a></li>
-                                                <li><a href="#">Ventilated Bricks</a></li>
-                                                <li><a href="#">Wood</a></li>
-                                                <li><a href="#" style="margin: 16px 0 0 0;">Prefabricated</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="space32"></div>
-                                        <h2 class="text-anime-style-3">$<span class="counter">32,500</span></h2>
-                                        <div class="space16"></div>
-                                        <p>Estimated Price</p>
+
+                                    <div class="form-group">
+                                        <label>Prepared For</label>
+                                        <input type="text">
                                     </div>
+
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -431,191 +476,7 @@
     </div>
     <!--===== COST AREA ENDS =======-->
 
-    <div class="calculator">
 
-        <!-- LEFT PANEL -->
-
-        <div class="left-panel">
-
-            <div class="checkbox-row">
-                <label>
-                    <input type="checkbox" id="firstBuyer">
-                    First Time Home Buyer
-                </label>
-
-                <label>
-                    <input type="checkbox">
-                    New Build Home or Condo
-                </label>
-            </div>
-
-            <div class="form-group">
-                <label>Province</label>
-                <select id="province">
-                    <option>British Columbia</option>
-                    <option>Ontario</option>
-                    <option>Alberta</option>
-                    <option>Quebec</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label>Property Value</label>
-
-                <div class="input-row">
-                    <input type="range" id="propertyValueRange" min="100000" max="5000000" step="1000" value="1442037">
-
-                    <input type="number" id="propertyValue" value="1442037">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Down Payment ($)</label>
-
-                <div class="input-row">
-                    <input type="range" id="downPaymentRange" min="0" max="5000000" value="308563">
-
-                    <input type="number" id="downPayment" value="308563">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Down Payment (%)</label>
-
-                <div class="input-row">
-                    <input type="range" id="downPercentRange" min="5" max="100" step="0.1" value="21.4">
-
-                    <input type="number" id="downPercent" value="21.4">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label>Interest Rate (%)</label>
-
-                <div class="input-row">
-                    <input type="range" id="interestRateRange" min="1" max="15" step="0.01" value="5.25">
-
-                    <input type="number" id="interestRate" value="5.25">
-                </div>
-            </div>
-
-            <div class="double-grid">
-
-                <div class="form-group">
-                    <label>Amortization</label>
-
-                    <select id="amortization">
-                        <option>5</option>
-                        <option>10</option>
-                        <option>15</option>
-                        <option>20</option>
-                        <option selected>25</option>
-                        <option>30</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Term</label>
-
-                    <select>
-                        <option>1 Year</option>
-                        <option>2 Years</option>
-                        <option>3 Years</option>
-                        <option>5 Years</option>
-                    </select>
-                </div>
-
-            </div>
-
-            <div class="double-grid">
-
-                <div class="form-group">
-                    <label>Compounded Period</label>
-
-                    <select>
-                        <option>Monthly</option>
-                        <option>Semi Annual</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label>Prepared For</label>
-                    <input type="text">
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- RIGHT PANEL -->
-
-        <div class="right-panel">
-
-            <div class="card">
-                <div class="title">
-                    <i class="fa-solid fa-house"></i>
-                    Mortgage Amount
-                </div>
-
-                <div id="mortgageAmount" class="big-number">
-                    $0
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="title">
-                    <i class="fa-solid fa-calendar"></i>
-                    Your Monthly Payment
-                </div>
-
-                <div id="monthlyPayment" class="big-number">
-                    $0
-                </div>
-            </div>
-
-            <div class="results-grid">
-
-                <div>Bi-Weekly</div>
-                <div id="biweekly">$0</div>
-
-                <div>Weekly</div>
-                <div id="weekly">$0</div>
-
-                <div>Semi Monthly</div>
-                <div id="semiMonthly">$0</div>
-
-                <div>Accelerated Weekly</div>
-                <div id="accWeekly">$0</div>
-
-            </div>
-
-            <hr>
-
-            <div class="results-grid">
-
-                <div>Insurance ($)</div>
-                <div id="insuranceDollar">$0</div>
-
-                <div>Insurance (%)</div>
-                <div id="insurancePercent">0%</div>
-
-            </div>
-
-            <hr>
-
-            <div class="results-grid">
-
-                <div>Closing Cost</div>
-                <div id="closingCost">$0</div>
-
-                <div>Minimum Down Payment</div>
-                <div id="minimumDown">$0</div>
-
-            </div>
-
-        </div>
-
-    </div>
 
 
     <div class="space100 d-lg-block d-none"></div>
