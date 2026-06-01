@@ -1,0 +1,107 @@
+
+
+.calculator{
+    display:grid;
+    grid-template-columns:55% 45%;
+    min-height:700px;
+    border-radius:25px;
+    overflow:hidden;
+}
+
+.left-panel{
+    background:#2f2f33;
+    color:#fff;
+    padding:40px;
+}
+
+.right-panel{
+    background:#eebf58;
+    padding:30px;
+}
+
+.checkbox-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:30px;
+}
+
+.form-group{
+    margin-bottom:25px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+}
+
+select,
+input[type=number],
+input[type=text]{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+}
+
+.input-row{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+input[type=range]{
+    flex:1;
+}
+
+.double-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.card{
+    background:#f3d18a;
+    border-radius:25px;
+    padding:20px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.title{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.big-number{
+    font-size:72px;
+    font-weight:700;
+}
+
+.results-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin:25px 0;
+}
+
+.results-grid div:nth-child(even){
+    text-align:right;
+    font-weight:bold;
+}
+
+hr{
+    border:none;
+    border-top:2px solid rgba(0,0,0,.2);
+}
+
+@media(max-width:991px){
+
+.calculator{
+    grid-template-columns:1fr;
+}
+
+.big-number{
+    font-size:45px;
+}
+
+}
