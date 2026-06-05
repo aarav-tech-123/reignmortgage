@@ -243,19 +243,19 @@
   
   // testimonial //
   $('.header-carousel-slider-area').owlCarousel({
-    loop:true,
+    loop:false,
     margin:30,
     nav:false,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',
-    dots:true,
-    items:10,
-    infinite:true,
+    dots:false,
+    items:1,
+    infinite:false,
     mouseDrag:false,
     navText:["<i class='fa-solid fa-angle-up'></i>" , "<i class='fa-solid fa-angle-down'></i>"],
-    autoplay:true,
-    smartSpeed:3000,
-    autoplayTimeout:4000,
+    autoplay:false,
+    smartSpeed:0,
+    autoplayTimeout:0,
     responsiveClass:true,
     responsive:{
         0:{
@@ -277,7 +277,7 @@
     nav:true,
     dots:true,
     center: true,
-    items:10,
+    items:1,
     navText:["<i class='fa-solid fa-angle-left'></i>" , "<i class='fa-solid fa-angle-right'></i>"],
     autoplay:true,
     smartSpeed:3000,
