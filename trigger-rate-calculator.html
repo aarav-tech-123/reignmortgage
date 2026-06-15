@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trusted Mortgage Broker Canada For Best Mortgage Solutions</title>
+    <title>Reign Mortgage | Mortgage Trigger Rate Calculator</title>
 
-    <meta name="description"
-        content="Reign Mortgage provides trusted mortgage solutions, low rates, and expert support from a reliable mortgage broker Canada for homebuyers nationwide. Call today!">
-
-    <link rel="canonical" href="https://reignmortgage.ca" />
     <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="assets/img/logo/logo-h2.png" type="image/x-icon">
+
+    <link rel="canonical" href="https://reignmortgage.ca/trigger-rate-calculator.html" />
 
     <!--===== CSS LINK =======-->
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
@@ -25,36 +23,125 @@
     <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/our-brokers.css">
+    <link rel="stylesheet" href="mortgage-style.css">
 
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="assets/js/plugins/jquery-3-6-0.min.js"></script>
 
+
+
+    <style>
+        .form-group {
+            margin-bottom: 35px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #000000;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .input-row {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .currency {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .number-input {
+            width: 125px;
+            height: 38px;
+            border: none;
+            border-radius: 8px;
+            /* text-align: center; */
+            font-size: 18px;
+        }
+
+        .slider-container {
+            position: relative;
+        }
+
+        .range-slider {
+            width: 100%;
+            height: 10px;
+            appearance: none;
+            background: linear-gradient(90deg, #8fd0ff, #0084c8);
+            border-radius: 50px;
+            outline: none;
+        }
+
+        .range-slider::-webkit-slider-thumb {
+            appearance: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid #0f7bb6;
+            cursor: pointer;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
+        }
+
+        .range-slider::-moz-range-thumb {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid #0f7bb6;
+            cursor: pointer;
+        }
+
+        .frequency-label {
+            color: #000000;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .select-box {
+            width: 370px;
+            height: 56px;
+            border-radius: 18px;
+            /* border: 4px solid #2b6bc9; */
+            padding: 0 20px;
+            font-size: 18px;
+            outline: none;
+        }
+
+        .result-card {
+            background: #f2c255;
+            border-radius: 30px;
+            min-height: 285px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .result-card h4 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .trigger-rate {
+            font-size: 68px;
+            font-weight: 500;
+        }
+    </style>
 </head>
-
-
 
 <body class="homepage2-body">
 
-    <!--===== PRELOADER STARTS =======-->
-    <div class="preloader preloader2">
-        <div class="loading-container">
-            <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/img/logo/logo-h2.png" alt=""></div>
-        </div>
-    </div>
-    <!--===== PRELOADER ENDS =======-->
 
-    <!--===== PROGRESS STARTS=======-->
-    <div class="paginacontainer">
-        <div class="progress-wrap">
-            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-            </svg>
-        </div>
-    </div>
-    <!--===== PROGRESS ENDS=======-->
+
 
     <!--=====HEADER START=======-->
     <header>
@@ -97,7 +184,8 @@
                             <div class="main-menu">
                                 <ul>
                                     <li><a href="/" class="plus">Home</a></li>
-                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="about.html">About</a>
+                                    </li>
                                     <li><a href="our-brokers.html">Our Brokers</a></li>
                                     <li><a href="javascript:void(0)">Services <i class="fa-solid fa-angle-down"></i></a>
                                         <ul class="dropdown-padding">
@@ -255,364 +343,90 @@
     </div>
     <!--===== MOBILE HEADER STARTS =======-->
 
+
     <!--===== HERO AREA STARTS =======-->
-    <div class="inner-hero-area mt-5" style="background-image: url(assets/img/all-images/hero/hero-img17.png);">
+    <div class="inner-hero-area mt-5" style="background-image: url(assets/img/all-images/hero/hero-img27.png);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="header-area">
-                        <h2>Our Brokers</h2>
+                        <h2>Mortgage Trigger Rate Calculator</h2>
                         <div class="space32"></div>
-                        <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>Our Brokers</span></a>
+                        <a href="index.html">Home <i class="fa-solid fa-angle-right"></i> <span>Mortgage
+                                Calculator</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--===== HERO AREA ENDS =======-->
+    <div class="space100 d-lg-block d-none"></div>
 
 
-    <!-- BROKERS SECTION -->
-    <section class="section" style="padding-top:70px;">
-        <div class="container">
-            <div class="section-title">
-                <h2>Meet Our Brokers</h2>
-                <div class="space8"></div>
-            </div>
+    <div class="container card p-4" style="text-align: left;">
 
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card" style="height:100%;">
-                        <div class="text-center">
-                            <img src="assets/img/brokers/Keniel Campbell Mortgage Agent - Level 1.png" alt="Keniel Campbell" style="width:200px;height:200px;object-fit:cover;border-radius:50%;" class="mb-3">
-                            <h4 style="margin:0;">Keniel Campbell</h4>
-                            <p style="margin-top:8px;">Mortgage Agent - Level 1</p>
-                        </div>
+        <div class="row">
+            <div class="col-6">
+                <!-- Mortgage Balance -->
+                <div class="form-group">
+                    <label>Current Mortgage Balance</label>
+
+                    <div class="input-row">
+                        <span class="currency">$</span>
+                        <input type="number" id="balanceInput" class="number-input" value="10000000">
+                    </div>
+
+                    <div class="slider-container">
+                        <input type="range" id="balanceSlider" class="range-slider" min="100000" max="10000000"
+                            value="10000000">
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card" style="height:100%;">
-                        <div class="text-center">
-                            <img src="assets/img/brokers/Nicole Campbell Mortgage Agent - Level 2.png" alt="Nicole Campbell" style="width:200px;height:200px;object-fit:cover;border-radius:50%;" class="mb-3">
-                            <h4 style="margin:0;">Nicole Campbell</h4>
-                            <p style="margin-top:8px;">Mortgage Agent - Level 2</p>
-                        </div>
+                <!-- Mortgage Payment -->
+                <div class="form-group">
+                    <label>Current Mortgage Payment</label>
+
+                    <div class="input-row">
+                        <span class="currency">$</span>
+                        <input type="number" id="paymentInput" class="number-input" value="10000">
+                    </div>
+
+                    <div class="slider-container">
+                        <input type="range" id="paymentSlider" class="range-slider" min="100" max="10000" value="10000">
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card" style="height:100%;">
-                        <div class="text-center">
-                            <img src="assets/img/brokers/Trisha Soamnath Mortgage Agent - Level 1.png" alt="Trisha Soamnath" style="width:200px;height:200px;object-fit:cover;border-radius:50%;" class="mb-3">
-                            <h4 style="margin:0;">Trisha Soamnath</h4>
-                            <p style="margin-top:8px;">Mortgage Agent - Level 1</p>
-                        </div>
+                <!-- Frequency -->
+                <div>
+                    <div class="frequency-label">
+                        Payment Frequency
                     </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card" style="height:100%;">
-                        <div class="text-center">
-                            <img src="assets/img/brokers/Zorie Campbell Principal Broker.png" alt="Zorie Campbell" style="width:200px;height:200px;object-fit:cover;border-radius:50%;" class="mb-3">
-                            <h4 style="margin:0;">Zorie Campbell</h4>
-                            <p style="margin-top:8px;">Principal Broker</p>
-                        </div>
-                    </div>
+                    <select id="frequency" class="select-box">
+                        <option value="52">Weekly</option>
+                        <option value="26">Bi-weekly</option>
+                        <option value="24">Semi-monthly</option>
+                        <option value="12">Monthly</option>
+                    </select>
                 </div>
-
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card" style="height:100%;">
-                        <div class="text-center">
-                            <img src="assets/img/all-images/service/service-img13.png" alt="Keniel Campbell" style="width:200px;height:200px;object-fit:cover;border-radius:50%;" class="mb-3">
-                            <h4 style="margin:0;">Jordan Spencer-Bailey</h4>
-                            <p style="margin-top:8px;">Mortgage Agent - Level 1</p>
+            </div>
+            <div class="col-6">
+                <div class="result-card">
+                    <div>
+                        <h4>Trigger Rate</h4>
+                        <div class="trigger-rate" id="triggerRate">
+                            1.2%
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div>
-                    <h1>Why Use a Mortgage Broker?</h1>
-                    <p>
-                        Finding the right mortgage can be overwhelming, especially when comparing multiple lenders,
-                        interest rates, and loan options. When you use a mortgage broker, it becomes much easier since
-                        it offers you professional advice, a large pool of financial institutions, and a customized
-                        solution to your financial aspirations.
-                    </p>
-                    <p>Mortgage broker assists you to make the right choices on whether you are buying your first home,
-                        refinancing an existing mortgage or just inquiring about investment property financing, while
-                        saving time and effort.</p>
-                </div>
 
-                <img src="https://placehold.co/700x500" alt="Mortgage Broker">
-            </div>
-        </div>
-    </section>
 
-    
-
-    <!-- SECTION 1 -->
-    <section class="section">
-
-        <div class="container">
-            <div class="content-grid">
-                <img src="https://placehold.co/600x450" alt="Multiple Lenders">
-
-                <div>
-                    <h3>Access to Multiple Lenders & Mortgage Options</h3>
-
-                    <p>
-                        Unlike a traditional bank that offers only its own products, a mortgage broker works with a
-                        network of lenders to help you compare a variety of mortgage solutions.
-                    </p>
-
-                    <p>
-                        This increased access enables you to explore competitive rates, lending policy that is flexible,
-                        and loan terms that best fit your financial needs. A mortgage broker can assist you in finding a
-                        mortgage that will address your immediate and future goals by looking at various choices on your
-                        behalf.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 2 -->
-    <section class="section features">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Save Time Throughout the Mortgage Process</h2>
-            </div>
-
-            <div class="feature-cards">
-
-                <div class="card">
-                    <h4>Save Time</h4>
-                    <p>
-                        It may be time-consuming to research lenders, compare mortgage products, and paperwork. Mortgage
-                        broker simplifies the process by doing these tasks on your behalf.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <h4>Professional Support</h4>
-                    <p>
-                        They assist in relieving stress and making your mortgage application move forward efficiently
-                        through documentation collection to contacting the lenders and arranging approvals.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SECTION 3 -->
-    <section class="section">
-        <div class="container">
-
-            <div class="content-grid reverse">
-
-                <img src="https://placehold.co/600x450" alt="Mortgage Advice">
-
-                <div>
-                    <h3>Personalized Mortgage Advice</h3>
-
-                    <p>
-                        Each borrower has different financial objectives, income structures, and property strategies.
-                        Mortgage brokers will listen to you and understand you before offering appropriate mortgage
-                        products.
-                    </p>
-
-                    <p>
-                        You may be a first time home buyer, a self-employed professional, an investor or a homeowner who
-                        wants to refinance, expert mortgage advice can help you through available options more
-                        confidently.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SECTION 4 -->
-    <section class="section help-section">
-        <div class="container">
-
-            <div class="help-wrapper">
-
-                <div>
-                    <h2 style="font-size:44px;margin-bottom:25px;">Support From Application to Approval</h2>
-                    <p>A mortgage broker offers continuous support along the mortgage process and not only just at the
-                        start of the application stage.</p>
-
-                    <h2 style="margin-top: 20px;">What a Mortgage Broker Can Help With:</h2>
-                    <ul class="help-list">
-                        <li>✓ Assessing your borrowing capacity</li>
-                        <li>✓ Comparing lenders and mortgage products</li>
-                        <li>✓ Explaining loan features and repayment options</li>
-                        <li>✓ Preparing and submitting applications</li>
-                        <li>✓ Managing lender communication</li>
-                        <li>✓ Assisting with approval conditions</li>
-                        <li>✓ Supporting settlement and refinancing processes</li>
-                    </ul>
-
-                </div>
-
-                <img src="https://placehold.co/650x500" alt="Mortgage Application">
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SECTION 5 -->
-    <section class="section">
-        <div class="container">
-
-            <div class="content-grid">
-
-                <img src="https://placehold.co/600x450" alt="Mortgage Rates">
-
-                <div>
-                    <h3>Potential Access to Competitive Mortgage Rates</h3>
-
-                    <p>
-                        Mortgage brokers collaborate with numerous lenders and are aware of the existing market
-                        products. Their industry expertise can assist them to find competitive mortgage rates and
-                        lending solutions that might not always be immediately visible when approaching lenders
-                        individually.
-                    </p>
-
-                    <p>
-                        Through product comparison, borrowers are able to make better decisions in terms of the interest
-                        rates, features of the loan and flexibility of repayment.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 6 -->
-    <section class="section">
-        <div class="container">
-
-            <div class="content-grid reverse">
-
-                <img src="https://placehold.co/600x450" alt="First Home Buyers">
-
-                <div>
-                    <h3>Guidance for First Home Buyers</h3>
-
-                    <p>
-                        Buying a first home is one of the most important financial choices that a number of individuals
-                        make. Mortgage brokers assist first home buyers in knowing the process of lending, the type of
-                        mortgages available and the requirements.
-                    </p>
-
-                    <p>
-                        They are able to clarify important aspects like the deposit requirement, loan arrangements, and
-                        budgeting plans and enable the buyer to proceed with a sense of security.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- SECTION 7 -->
-    <section class="section">
-        <div class="container">
-
-            <div class="content-grid">
-
-                <img src="https://placehold.co/600x450" alt="First Home Buyers">
-
-                <div>
-                    <h3>Mortgage Solutions for Refinancing</h3>
-
-                    <p>
-                        Refinancing will also allow the homeowners to reconsider their existing mortgage contract, and
-                        see if they can more effectively match their loan with their new financial situation.
-                    </p>
-
-                    <p>
-                        A mortgage broker will be able to evaluate your current mortgage, compare the possibility of
-                        refinancing your mortgage, and also find possible chances to get even greater flexibility, debt
-                        consolidation or home equity access where necessary.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SECTION 8 -->
-    <section class="section">
-        <div class="container">
-
-            <div class="content-grid reverse">
-
-                <img src="https://placehold.co/600x450" alt="First Home Buyers">
-
-                <div>
-                    <h3>Expert Knowledge of the Mortgage Market</h3>
-
-                    <p>
-                        Interest rates, mortgage products and lender requirements change regularly. Borrowers may find
-                        it difficult to keep abreast of these changes.
-                    </p>
-
-                    <p>
-                        Mortgage brokers monitor the market and maintain relationships with lenders, allowing them to
-                        provide current insights and recommendations based on available lending options.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- BENEFITS -->
-    <section class="section benefits">
-        <div class="container">
-
-            <div class="section-title">
-                <h2>Why Work With a Mortgage Broker?</h2>
-
-                <p>By selecting a mortgage broker, you are getting a well-informed professional to help you in what is
-                    likely to be one of the most significant financial choices in your life.</p>
-            </div>
-
-            <div class="benefit-grid">
-
-                <div class="benefit-item">Access to Multiple Lenders</div>
-                <div class="benefit-item">Competitive Mortgage Options</div>
-                <div class="benefit-item">Personalized Mortgage Advice</div>
-                <div class="benefit-item">Time-Saving Support</div>
-                <div class="benefit-item">Assistance with paperwork and applications </div>
-                <div class="benefit-item">Guidance for first home buyers </div>
-                <div class="benefit-item">Refinancing Expertise</div>
-                <div class="benefit-item">Ongoing support throughout the mortgage process </div>
-
-            </div>
-
-        </div>
-    </section>
-
+    <div class="space100 d-lg-block d-none"></div>
 
     <!--===== CTA AREA STARTS =======-->
     <div class="cta3-section-area sp1">
@@ -621,12 +435,11 @@
                 <div class="col-lg-6">
                     <div class="cta-header">
                         <h2 class="text-anime-style-3">Ready To Take The Next Step Toward Your Dream Home?</h2>
-                        <p style="color: #ffff;">With expert assistance and access to a broad range of lending solutions, a mortgage broker can help simplify your path to securing the right mortgage.</p>
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5">
-                    <div class="btn-area">
+                    <div class="btn-area" data-aos="zoom-in" data-aos-duration="1000">
                         <a href="contact.html" class="header-btn2-h3">Start Your Project <span><i
                                     class="fa-solid fa-arrow-right"></i></span></a>
                         <a href="contact.html" class="header-btn2-h3 btn2">Build With Us <span><i
@@ -741,6 +554,65 @@
             </div>
         </div>
     </div>
+    <!--===== FOOTER AREA ENDS =======-->
+
+
+
+    <script>
+
+        const balanceInput = document.getElementById('balanceInput');
+        const balanceSlider = document.getElementById('balanceSlider');
+
+        const paymentInput = document.getElementById('paymentInput');
+        const paymentSlider = document.getElementById('paymentSlider');
+
+        const frequency = document.getElementById('frequency');
+        const triggerRate = document.getElementById('triggerRate');
+
+        balanceSlider.addEventListener('input', () => {
+            balanceInput.value = balanceSlider.value;
+            calculateTriggerRate();
+        });
+
+        balanceInput.addEventListener('input', () => {
+            balanceSlider.value = balanceInput.value;
+            calculateTriggerRate();
+        });
+
+        paymentSlider.addEventListener('input', () => {
+            paymentInput.value = paymentSlider.value;
+            calculateTriggerRate();
+        });
+
+        paymentInput.addEventListener('input', () => {
+            paymentSlider.value = paymentInput.value;
+            calculateTriggerRate();
+        });
+
+        frequency.addEventListener('change', calculateTriggerRate);
+
+        function calculateTriggerRate() {
+
+            let balance = parseFloat(balanceInput.value) || 0;
+            let payment = parseFloat(paymentInput.value) || 0;
+            let periods = parseInt(frequency.value);
+
+            if (balance === 0) {
+                triggerRate.innerHTML = '0%';
+                return;
+            }
+
+            // Approximation Formula
+            let annualPayment = payment * periods;
+            let rate = (annualPayment / balance) * 100;
+
+            triggerRate.innerHTML = rate.toFixed(1) + '%';
+        }
+
+        calculateTriggerRate();
+
+    </script>
+
 
 
 
@@ -762,7 +634,6 @@
     <script src="assets/js/plugins/waypoints.js"></script>
     <script src="assets/js/plugins/slick-slider.js"></script>
     <script src="assets/js/plugins/circle-progress.js"></script>
-    <script src="assets/js/main.js"></script>
 
 </body>
 
