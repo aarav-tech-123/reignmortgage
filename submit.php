@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 // === CONFIG: update these values ===
 $dbHost = 'localhost';
-$dbName = 'reign_mortgage';
-$dbUser = 'db_user';
-$dbPass = 'db_pass';
+$dbName = 'u868210921_reignmortgage';
+$dbUser = 'u868210921_reignmortgage';
+$dbPass = 'Reignmortgage@1234';
 // ================================
 
 header('Content-Type: text/html; charset=utf-8');

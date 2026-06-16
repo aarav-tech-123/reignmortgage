@@ -16815,3 +16815,10 @@ html {
     font-size: 15px;
   }
 }
+
+
+
+.site-logo a img {
+  width: 100%;
+  max-height: none;
+}

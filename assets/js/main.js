@@ -443,7 +443,7 @@
   $(window).on("load", function (event) {
     setTimeout(function () {
       $(".preloader").fadeToggle();
-    }, 200);
+    }, 100);
   
   });
   
